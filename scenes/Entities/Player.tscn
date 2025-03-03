@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://glw1whccxt7a"]
+
+[ext_resource type="Texture2D" uid="uid://wrnl6f6f2wvs" path="res://assets/player.png" id="2_qty0m"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2sbtg"]
+radius = 66.0076
+
+[node name="Player" type="RigidBody2D"]
+gravity_scale = 0.0
+can_sleep = false
+linear_damp = 3.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.5, 0.5)
+shape = SubResource("CircleShape2D_2sbtg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_qty0m")
