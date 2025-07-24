@@ -1,11 +1,3 @@
-# WebSocket-ed Diep.io
+# Godot Websocket Demo
 
-Diep.io remake with python integration via websocket connection.
-
-## Todo
-
-[ ] seperating server/client sides
-[ ] better authentication mechanism
-[ ] main screen, pause screen, etc.
-[ ] organized python API wrapper on client side
-[ ] more game features
+A demonstration of how a godot game could be controlled from a python script, performing API calls and exchanging data via websocket.
