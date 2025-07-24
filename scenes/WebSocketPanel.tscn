@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://ddfy761lxmb02"]
 
-[ext_resource type="Script" path="res://scripts/websocket_panel.gd" id="1_7wb73"]
+[ext_resource type="Script" uid="uid://b66uuq3fwqyak" path="res://scripts/websocket_panel.gd" id="1_7wb73"]
 
 [node name="WebSocketPanel" type="Control"]
 layout_mode = 3
@@ -12,6 +12,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_7wb73")
+value = 48763
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1

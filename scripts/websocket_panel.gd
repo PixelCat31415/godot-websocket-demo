@@ -37,7 +37,7 @@ func _send_message(msg: Variant) -> void:
         ws.send_bytes(var_to_bytes(msg))
     _log("Sent message: {msg}", {"msg": str(msg)})
 
-func _on_received_message(msg: Variant) -> void:
+func _on_received_message(_msg: Variant) -> void:
     pass
     # _log("Recieved message: {msg}", {"msg": str(msg)})
     # if typeof(msg) == TYPE_STRING:
@@ -74,7 +74,7 @@ func _process(_delta: float) -> void:
     else:
         _status_label.text = "Status: Disconnected"
         _status_label.add_theme_color_override("font_color", Color(1, 0, 0))
-    
+
     if ws != null:
         _name_label.text = "WebSocket ID = {id}, token = {token}" \
             .format({"id": ws.id, "token": ws.token})

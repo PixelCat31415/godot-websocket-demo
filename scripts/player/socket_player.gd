@@ -98,4 +98,4 @@ func _on_received_command(command_bytes: PackedByteArray) -> void:
 		ret_value = [ret_value]
 	ret_value.push_front(ret_code)
 	_ws.send_bytes(var_to_bytes(ret_value))
-	
+

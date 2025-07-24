@@ -36,4 +36,4 @@ func _integrate_forces(state: PhysicsDirectBodyState2D) -> void:
 
 func _process(_delta: float) -> void:
 	pass
-	
+
